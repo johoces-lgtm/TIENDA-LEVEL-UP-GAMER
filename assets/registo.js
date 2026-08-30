@@ -2,23 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const formulario = document.getElementById("formRegistro");
     if (!formulario) return;
 
-    // 1. DICCIONARIO DE REGIONES Y COMUNAS
+    // 1. DICCIONARIO DE REGIONES
     const datosGeograficos = {
-        "RM": { nombre: "Región Metropolitana", comunas: ["Santiago", "Puente Alto", "Maipú", "La Florida"] },
-        "V": { nombre: "Región de Valparaíso", comunas: ["Valparaíso", "Viña del Mar", "Quilpué"] },
-        "VIII": { nombre: "Región del Biobío", comunas: ["Concepción", "Talcahuano", "San Pedro de la Paz"] }
+        "RM": { nombre: "Región Metropolitana", comunas: ["Santiago", "Puente Alto", "Maipú", "La Florida", "San Bernardo", "Las Condes"] },
+        "V": { nombre: "Región de Valparaíso", comunas: ["Valparaíso", "Viña del Mar", "Quilpué", "Villa Alemana"] },
+        "VIII": { nombre: "Región del Biobío", comunas: ["Concepción", "Talcahuano", "San Pedro de la Paz", "Chiguayante"] }
     };
 
     const selectRegion = document.getElementById("region");
     const selectComuna = document.getElementById("comuna");
 
-    // Llenar Regiones
     selectRegion.innerHTML = '<option value="">-- Selecciona Región --</option>';
     for (const clave in datosGeograficos) {
         selectRegion.innerHTML += `<option value="${clave}">${datosGeograficos[clave].nombre}</option>`;
     }
 
-    // Llenar Comunas al cambiar la Región
     selectRegion.addEventListener("change", (e) => {
         selectComuna.innerHTML = '<option value="">-- Selecciona Comuna --</option>';
         const regionSeleccionada = e.target.value;
@@ -29,20 +27,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. FORZAR FORMATO DEL RUT (Solo números y K)
-    const inputRun = document.getElementById("run");
-    inputRun.addEventListener("input", function() {
-        this.value = this.value.toUpperCase().replace(/[^0-9K]/g, '');
-    });
+    // 2. BLOQUEO DE FECHA (Evita años de 5 dígitos y fechas absurdas)
+    const inputFecha = document.getElementById("fechaNacimiento");
+    if (inputFecha) {
+        const hoy = new Date().toISOString().split("T")[0]; // Fecha actual
+        inputFecha.setAttribute("max", hoy);
+        inputFecha.setAttribute("min", "1900-01-01"); // Mínimo año 1900
+    }
 
-    // 3. VALIDACIÓN AL ENVIAR
+    // 3. FILTRO DE RUT
+    const inputRun = document.getElementById("run");
+    if (inputRun) {
+        inputRun.setAttribute("maxlength", "9");
+        inputRun.addEventListener("input", function() {
+            this.value = this.value.toUpperCase().replace(/[^0-9K]/g, '');
+        });
+    }
+
+    // 4. VALIDACIONES AL ENVIAR
     formulario.addEventListener("submit", (evento) => {
         evento.preventDefault(); 
         
-        // Limpiar mensajes rojos anteriores
-        document.querySelectorAll('.msj-error').forEach(e => e.remove());
+        document.querySelectorAll('.msj-error').forEach(el => el.remove());
 
-        const fechaNacimiento = document.getElementById("fechaNacimiento");
+        const run = document.getElementById("run");
         const contrasena = document.getElementById("contrasena");
         const confirmarContrasena = document.getElementById("confirmarContrasena");
         const nombre = document.getElementById("nombre").value.trim();
@@ -50,20 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let hayErrores = false;
 
-        // Función auxiliar para inyectar texto rojo
         const mostrarError = (inputElement, mensaje) => {
-            inputElement.insertAdjacentHTML('afterend', `<div class="text-danger small fw-bold mt-1 msj-error">${mensaje}</div>`);
+            inputElement.insertAdjacentHTML('afterend', `<div class="text-danger small fw-bold mt-1 msj-error">⚠️ ${mensaje}</div>`);
             hayErrores = true;
         };
 
-        // Validar Fecha (Que exista y no sea futura)
-        const fechaIngresada = new Date(fechaNacimiento.value);
-        const fechaActual = new Date();
-        if (!fechaNacimiento.value || fechaIngresada >= fechaActual || fechaIngresada.getFullYear() < 1900) {
-            mostrarError(fechaNacimiento, "Fecha de nacimiento inválida.");
+        if (run.value.length < 8) {
+            mostrarError(run, "RUT incompleto (mínimo 8 caracteres).");
         }
 
-        // Validar Contraseñas
+        // Validación de fecha inválida en rojo
+        const anioIngresado = new Date(inputFecha.value).getFullYear();
+        const anioActual = new Date().getFullYear();
+        if (!inputFecha.value || anioIngresado < 1900 || anioIngresado > anioActual) {
+            mostrarError(inputFecha, "Fecha de nacimiento inválida.");
+        }
+
+        // Validación de contraseñas en rojo
         if (contrasena.value.length < 6) {
             mostrarError(contrasena, "Mínimo 6 caracteres.");
         }
@@ -71,11 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
             mostrarError(confirmarContrasena, "Las contraseñas no coinciden.");
         }
 
-        // Si todo está bien, mensaje de éxito global
         if (!hayErrores) {
-            alert(`✅ ¡Registro exitoso, ${nombre}!\n${correo.includes("@duoc.cl") ? "Descuento del 20% aplicado." : ""}`);
+            let mensajeExito = `✅ ¡Registro exitoso! Bienvenido, ${nombre}.`;
+            if (correo.includes("@duoc.cl")) {
+                mensajeExito += "\n🎓 ¡Se ha activado tu 20% de descuento Duoc!";
+            }
+            alert(mensajeExito);
             formulario.reset();
-            selectComuna.innerHTML = '<option value="">-- Selecciona Comuna --</option>'; // Resetear comunas
+            selectComuna.innerHTML = '<option value="">-- Selecciona Comuna --</option>';
         }
     });
 });
