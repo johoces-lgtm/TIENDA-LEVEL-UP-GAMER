@@ -1,40 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Capturar el parámetro de la URL
     const params = new URLSearchParams(window.location.search);
     const productoId = params.get("id");
 
     if (!productoId) {
-        // Si no hay ID en la URL, redirige al catálogo
         window.location.href = "productos.html";
         return;
     }
 
-    // 2. Buscar el producto en la base de datos (CATALOGO_PRODUCTOS viene de productos.js)
-    const productoEncontrado = CATALOGO_PRODUCTOS.find(
-        prod => prod.codigo.toUpperCase() === productoId.toUpperCase()
-    );
+    if (typeof CATALOGO_PRODUCTOS === "undefined") {
+        console.error("La base de datos de productos no está definida.");
+        return;
+    }
 
-    if (productoEncontrado) {
-        // 3. Reemplazar los textos e imagen de la plantilla
-        document.getElementById("producto-nombre").innerText = productoEncontrado.nombre;
-        document.getElementById("producto-precio").innerText = `$${productoEncontrado.precio.toLocaleString('es-CL')}`;
-        document.getElementById("producto-imagen").src = productoEncontrado.imagen;
-        document.getElementById("producto-imagen").alt = productoEncontrado.nombre;
+    const producto = CATALOGO_PRODUCTOS.find(p => p.codigo.toUpperCase() === productoId.toUpperCase());
+
+    if (producto) {
+        document.getElementById("producto-imagen").src = producto.imagen;
+        document.getElementById("producto-imagen").alt = producto.nombre;
+        document.getElementById("producto-categoria").innerText = producto.categoria;
+        document.getElementById("producto-nombre").innerText = producto.nombre;
         
-        const badgeCategoria = document.getElementById("producto-categoria");
-        badgeCategoria.innerText = productoEncontrado.categoria;
+        // Corregido: Agregamos comillas invertidas para concatenar el símbolo de peso
+        document.getElementById("producto-precio").innerText = `$${producto.precio.toLocaleString('es-CL')}`;
 
-        // 4. Inyectar especificaciones y descripción técnica de forma dinámica
-        const listaEspecificaciones = document.getElementById("producto-especificaciones");
-        listaEspecificaciones.innerHTML = `
-            <li class="mb-2"><strong>Código de Producto:</strong> ${productoEncontrado.codigo}</li>
-            <li class="mb-2"><strong>Descripción:</strong> ${productoEncontrado.descripcion}</li>
-            <li class="mb-2"><strong>Stock en Bodega:</strong> ${productoEncontrado.stock} unidades</li>
-            <li class="mb-2"><strong>Garantía Oficial:</strong> 12 meses directamente en Chile</li>
-        `;
+        const especificaciones = document.getElementById("producto-specifications");
+        if (especificaciones) {
+            especificaciones.innerHTML = `
+                <li class="mb-2"><strong>Código único:</strong> ${producto.codigo}</li>
+                <li class="mb-2"><strong>Descripción:</strong> ${producto.descripcion}</li>
+                <li class="mb-2"><strong>Unidades Disponibles:</strong> ${producto.stock} unidades</li>
+                <li class="mb-2"><strong>Garantía:</strong> 12 meses directamente con Level-Up</li>
+            `;
+        }
     } else {
-        console.error("Producto no encontrado con el código: " + productoId);
-        alert("El producto seleccionado no existe en el catálogo.");
+        alert("¡Error! El producto buscado no existe.");
         window.location.href = "productos.html";
     }
 });
