@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // =====================================================================
-    // 2. VALIDACIONES AL SALIR DEL CAMPO (Evento 'blur')[cite: 4]
+    // 2. VALIDACIONES AL SALIR DEL CAMPO (Evento 'blur')
     // =====================================================================
     const inputRun = document.getElementById("run");
     const errorRun = document.getElementById("error-run");
@@ -239,6 +239,14 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("¡Socio registrado exitosamente!");
         }
+
+        // =================================================================
+        // ESTA ES LA PARTE NUEVA QUE GUARDA LOS DATOS EN MEMORIA
+        // =================================================================
+        localStorage.setItem("correoRegistrado", correo);
+        localStorage.setItem("claveRegistrada", contrasena);
+        localStorage.setItem("nombreRegistrado", nombre);
+        // =================================================================
 
         formulario.reset();
         selectComuna.innerHTML = '<option value="">-- Selecciona Comuna --</option>';
