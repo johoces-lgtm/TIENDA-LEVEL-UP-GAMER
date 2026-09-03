@@ -1,0 +1,2118 @@
+﻿Listado de rutas de carpetas
+El n·mero de serie del volumen es 00000066 9C5D:7B54
+C:.
+|   configuracion_propiedades.txt
+|   estructura_proyecto.txt
+|   estructura_proyecto_fija.txt
+|   ligas.txt
+|   todos_los_poms.txt
+|   todo_el_codigo.txt
+|   
++---.github
+|   \---java-upgrade
+|       |   .gitignore
+|       |   
+|       \---hooks
+|           \---scripts
+|                   recordToolUse.ps1
+|                   recordToolUse.sh
+|                   
++---bd pobladas
+|       bd auth.sql
+|       bd_auth_usuarios.sql
+|       bd_clubes_clubes.sql
+|       bd_football_api_api_guardados.sql
+|       bd_jugadores_jugadores.sql
+|       bd_ligas_ligas.sql
+|       bd_partidos_partido.sql
+|       bd_posiciones_posiciones.sql
+|       bd_usuarios_usuario.sql
+|       
++---jugadores
+|   |   .gitattributes
+|   |   .gitignore
+|   |   HELP.md
+|   |   mvnw
+|   |   mvnw.cmd
+|   |   pom.xml
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   +---.mvn
+|   |   \---wrapper
+|   |           maven-wrapper.properties
+|   |           
+|   +---src
+|   |   +---main
+|   |   |   +---java
+|   |   |   |   \---cl
+|   |   |   |       \---duoc
+|   |   |   |           \---jugadores
+|   |   |   |               |   JugadoresApplication.java
+|   |   |   |               |   
+|   |   |   |               +---client
+|   |   |   |               |       ClubesClient.java
+|   |   |   |               |       
+|   |   |   |               +---config
+|   |   |   |               |       WebClientConfig.java
+|   |   |   |               |       
+|   |   |   |               +---controller
+|   |   |   |               |       JugadoresController.java
+|   |   |   |               |       
+|   |   |   |               +---dto
+|   |   |   |               |   |   DtoApiError.java
+|   |   |   |               |   |   
+|   |   |   |               |   +---request
+|   |   |   |               |   |       DtoJugadoresRequest.java
+|   |   |   |               |   |       
+|   |   |   |               |   \---response
+|   |   |   |               |           DtoJugadoresResponse.java
+|   |   |   |               |           
+|   |   |   |               +---exception
+|   |   |   |               |       GlobalExceptionHandler.java
+|   |   |   |               |       ResourceNotFoundException.java
+|   |   |   |               |       
+|   |   |   |               +---model
+|   |   |   |               |       JugadoresModel.java
+|   |   |   |               |       
+|   |   |   |               +---repository
+|   |   |   |               |       JugadoresRepository.java
+|   |   |   |               |       
+|   |   |   |               +---security
+|   |   |   |               |       JwtValidationFilter.java
+|   |   |   |               |       SecurityConfig.java
+|   |   |   |               |       
+|   |   |   |               \---service
+|   |   |   |                       JugadoresService.java
+|   |   |   |                       
+|   |   |   \---resources
+|   |   |       |   application-dev.properties
+|   |   |       |   application-prod.properties
+|   |   |       |   application-test.properties
+|   |   |       |   application.properties
+|   |   |       |   
+|   |   |       +---static
+|   |   |       \---templates
+|   |   \---test
+|   |       \---java
+|   |           \---cl
+|   |               \---duoc
+|   |                   \---jugadores
+|   |                           JugadoresApplicationTests.java
+|   |                           
+|   \---target
+|       +---classes
+|       |   |   application-dev.properties
+|       |   |   application-prod.properties
+|       |   |   application-test.properties
+|       |   |   application.properties
+|       |   |   
+|       |   \---cl
+|       |       \---duoc
+|       |           \---jugadores
+|       |               |   JugadoresApplication.class
+|       |               |   
+|       |               +---client
+|       |               |       ClubesClient.class
+|       |               |       
+|       |               +---config
+|       |               |       WebClientConfig.class
+|       |               |       
+|       |               +---controller
+|       |               |       JugadoresController.class
+|       |               |       
+|       |               +---dto
+|       |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|       |               |   |   DtoApiError.class
+|       |               |   |   
+|       |               |   +---request
+|       |               |   |       DtoJugadoresRequest.class
+|       |               |   |       
+|       |               |   \---response
+|       |               |           DtoJugadoresResponse.class
+|       |               |           
+|       |               +---exception
+|       |               |       GlobalExceptionHandler.class
+|       |               |       ResourceNotFoundException.class
+|       |               |       
+|       |               +---model
+|       |               |       JugadoresModel.class
+|       |               |       
+|       |               +---repository
+|       |               |       JugadoresRepository.class
+|       |               |       
+|       |               +---security
+|       |               |       JwtValidationFilter.class
+|       |               |       SecurityConfig.class
+|       |               |       
+|       |               \---service
+|       |                       JugadoresService.class
+|       |                       
+|       +---generated-sources
+|       |   \---annotations
+|       +---generated-test-sources
+|       |   \---test-annotations
+|       \---test-classes
+|           \---cl
+|               \---duoc
+|                   \---jugadores
+|                           JugadoresApplicationTests.class
+|                           
++---lesiones
+|   |   .gitattributes
+|   |   .gitignore
+|   |   HELP.md
+|   |   mvnw
+|   |   mvnw.cmd
+|   |   pom.xml
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   +---.mvn
+|   |   \---wrapper
+|   |           maven-wrapper.properties
+|   |           
+|   +---src
+|   |   +---main
+|   |   |   +---java
+|   |   |   |   \---cl
+|   |   |   |       \---duoc
+|   |   |   |           \---lesiones
+|   |   |   |               |   LesionesApplication.java
+|   |   |   |               |   
+|   |   |   |               +---client
+|   |   |   |               |       JugadoresClient.java
+|   |   |   |               |       
+|   |   |   |               +---config
+|   |   |   |               |       WebClientConfig.java
+|   |   |   |               |       
+|   |   |   |               +---controller
+|   |   |   |               |       LesionesController.java
+|   |   |   |               |       
+|   |   |   |               +---dto
+|   |   |   |               |   |   DtoApiError.java
+|   |   |   |               |   |   
+|   |   |   |               |   +---request
+|   |   |   |               |   |       DtoLesionesRequest.java
+|   |   |   |               |   |       
+|   |   |   |               |   \---response
+|   |   |   |               |           DtoLesionesResponse.java
+|   |   |   |               |           
+|   |   |   |               +---exception
+|   |   |   |               |       GlobalExceptionHandler.java
+|   |   |   |               |       ResourceNotFoundException.java
+|   |   |   |               |       
+|   |   |   |               +---model
+|   |   |   |               |       LesionesModel.java
+|   |   |   |               |       
+|   |   |   |               +---repository
+|   |   |   |               |       LesionesRepository.java
+|   |   |   |               |       
+|   |   |   |               +---security
+|   |   |   |               |       JwtValidationFilter.java
+|   |   |   |               |       SecurityConfig.java
+|   |   |   |               |       
+|   |   |   |               \---service
+|   |   |   |                       LesionesService.java
+|   |   |   |                       
+|   |   |   \---resources
+|   |   |       |   application-dev.properties
+|   |   |       |   application-prod.properties
+|   |   |       |   application-test.properties
+|   |   |       |   application.properties
+|   |   |       |   
+|   |   |       +---static
+|   |   |       \---templates
+|   |   \---test
+|   |       \---java
+|   |           \---cl
+|   |               \---duoc
+|   |                   \---lesiones
+|   |                           LesionesApplicationTests.java
+|   |                           
+|   \---target
+|       +---classes
+|       |   |   application-dev.properties
+|       |   |   application-prod.properties
+|       |   |   application-test.properties
+|       |   |   application.properties
+|       |   |   
+|       |   \---cl
+|       |       \---duoc
+|       |           \---lesiones
+|       |               |   LesionesApplication.class
+|       |               |   
+|       |               +---client
+|       |               |       JugadoresClient.class
+|       |               |       
+|       |               +---config
+|       |               |       WebClientConfig.class
+|       |               |       
+|       |               +---controller
+|       |               |       LesionesController.class
+|       |               |       
+|       |               +---dto
+|       |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|       |               |   |   DtoApiError.class
+|       |               |   |   
+|       |               |   +---request
+|       |               |   |       DtoLesionesRequest.class
+|       |               |   |       
+|       |               |   \---response
+|       |               |           DtoLesionesResponse.class
+|       |               |           
+|       |               +---exception
+|       |               |       GlobalExceptionHandler.class
+|       |               |       ResourceNotFoundException.class
+|       |               |       
+|       |               +---model
+|       |               |       LesionesModel.class
+|       |               |       
+|       |               +---repository
+|       |               |       LesionesRepository.class
+|       |               |       
+|       |               +---security
+|       |               |       JwtValidationFilter.class
+|       |               |       SecurityConfig.class
+|       |               |       
+|       |               \---service
+|       |                       LesionesService.class
+|       |                       
+|       +---generated-sources
+|       |   \---annotations
+|       +---generated-test-sources
+|       |   \---test-annotations
+|       +---spring-aot
+|       |   \---main
+|       |       +---classes
+|       |       |   +---cl
+|       |       |   |   \---duoc
+|       |       |   |       \---lesiones
+|       |       |   |               LesionesApplication__ApplicationContextInitializer.class
+|       |       |   |               LesionesApplication__BeanDefinitions.class
+|       |       |   |               LesionesApplication__BeanFactoryRegistrations.class
+|       |       |   |               
+|       |       |   \---org
+|       |       |       \---springframework
+|       |       |           +---aop
+|       |       |           |   +---aspectj
+|       |       |           |   |   \---annotation
+|       |       |           |   |           AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   \---framework
+|       |       |           |           ProxyConfig__BeanDefinitions.class
+|       |       |           |           
+|       |       |           +---boot
+|       |       |           |   +---autoconfigure
+|       |       |           |   |   |   AutoConfigurationPackages__BeanDefinitions$BasePackages.class
+|       |       |           |   |   |   AutoConfigurationPackages__BeanDefinitions.class
+|       |       |           |   |   |   
+|       |       |           |   |   +---aop
+|       |       |           |   |   |       AopAutoConfiguration__BeanDefinitions$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration.class
+|       |       |           |   |   |       AopAutoConfiguration__BeanDefinitions$AspectJAutoProxyingConfiguration.class
+|       |       |           |   |   |       AopAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---availability
+|       |       |           |   |   |       ApplicationAvailabilityAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---context
+|       |       |           |   |   |       ConfigurationPropertiesAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       LifecycleAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       LifecycleProperties__BeanDefinitions.class
+|       |       |           |   |   |       PropertyPlaceholderAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---info
+|       |       |           |   |   |       ProjectInfoAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       ProjectInfoProperties__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---ssl
+|       |       |           |   |   |       SslAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       SslProperties__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---task
+|       |       |           |   |   |       TaskExecutionAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       TaskExecutionProperties__BeanDefinitions.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions$AsyncConfigurerConfiguration.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions$BootstrapExecutorConfiguration.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions$SimpleAsyncTaskExecutorBuilderConfiguration.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions$TaskExecutorConfiguration.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions$ThreadPoolTaskExecutorBuilderConfiguration.class
+|       |       |           |   |   |       TaskExecutorConfigurations__BeanDefinitions.class
+|       |       |           |   |   |       TaskSchedulingAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       TaskSchedulingConfigurations__BeanDefinitions$SimpleAsyncTaskSchedulerBuilderConfiguration.class
+|       |       |           |   |   |       TaskSchedulingConfigurations__BeanDefinitions$ThreadPoolTaskSchedulerBuilderConfiguration.class
+|       |       |           |   |   |       TaskSchedulingConfigurations__BeanDefinitions.class
+|       |       |           |   |   |       TaskSchedulingProperties__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   \---web
+|       |       |           |   |           WebProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---context
+|       |       |           |   |   \---properties
+|       |       |           |   |           BoundConfigurationProperties__BeanDefinitions.class
+|       |       |           |   |           ConfigurationPropertiesBinder__BeanDefinitions$ConfigurationPropertiesBinderFactory.class
+|       |       |           |   |           ConfigurationPropertiesBinder__BeanDefinitions.class
+|       |       |           |   |           ConfigurationPropertiesBindingPostProcessor__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---data
+|       |       |           |   |   +---autoconfigure
+|       |       |           |   |   |   \---web
+|       |       |           |   |   |           DataWebAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |           DataWebProperties__BeanDefinitions.class
+|       |       |           |   |   |           
+|       |       |           |   |   \---jpa
+|       |       |           |   |       \---autoconfigure
+|       |       |           |   |               DataJpaRepositoriesAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |               
+|       |       |           |   +---hibernate
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           HibernateJpaAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           HibernateJpaConfiguration__BeanDefinitions.class
+|       |       |           |   |           HibernateProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---http
+|       |       |           |   |   +---codec
+|       |       |           |   |   |   \---autoconfigure
+|       |       |           |   |   |           CodecsAutoConfiguration__BeanDefinitions$DefaultCodecsConfiguration.class
+|       |       |           |   |   |           CodecsAutoConfiguration__BeanDefinitions$JacksonJsonCodecConfiguration.class
+|       |       |           |   |   |           CodecsAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |           HttpCodecsProperties__BeanDefinitions.class
+|       |       |           |   |   |           
+|       |       |           |   |   \---converter
+|       |       |           |   |       \---autoconfigure
+|       |       |           |   |               HttpMessageConvertersAutoConfiguration__BeanDefinitions$StringHttpMessageConverterConfiguration.class
+|       |       |           |   |               HttpMessageConvertersAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |               HttpMessageConvertersProperties__BeanDefinitions.class
+|       |       |           |   |               Jackson2HttpMessageConvertersConfiguration__BeanDefinitions.class
+|       |       |           |   |               JacksonHttpMessageConvertersConfiguration__BeanDefinitions.class
+|       |       |           |   |               
+|       |       |           |   +---jackson
+|       |       |           |   |   |   JacksonMixinModuleEntries__BeanDefinitions.class
+|       |       |           |   |   |   
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           JacksonAutoConfiguration__BeanDefinitions$JacksonJsonMapperBuilderCustomizerConfiguration.class
+|       |       |           |   |           JacksonAutoConfiguration__BeanDefinitions$JacksonMixinConfiguration.class
+|       |       |           |   |           JacksonAutoConfiguration__BeanDefinitions$JsonProblemDetailsConfiguration.class
+|       |       |           |   |           JacksonAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           JacksonProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---jdbc
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           DataSourceAutoConfiguration__BeanDefinitions$PooledDataSourceConfiguration.class
+|       |       |           |   |           DataSourceAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           DataSourceConfiguration__BeanDefinitions$Hikari.class
+|       |       |           |   |           DataSourceConfiguration__BeanDefinitions.class
+|       |       |           |   |           DataSourceInitializationAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           DataSourcePoolMetadataProvidersConfiguration__BeanDefinitions.class
+|       |       |           |   |           DataSourceProperties__BeanDefinitions.class
+|       |       |           |   |           DataSourceTransactionManagerAutoConfiguration__BeanDefinitions$JdbcTransactionManagerConfiguration.class
+|       |       |           |   |           DataSourceTransactionManagerAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           JdbcClientAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           JdbcProperties__BeanDefinitions.class
+|       |       |           |   |           JdbcTemplateAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           JdbcTemplateConfiguration__BeanDefinitions.class
+|       |       |           |   |           NamedParameterJdbcTemplateConfiguration__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---jpa
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           JpaBaseConfiguration__BeanDefinitions$JpaWebConfiguration.class
+|       |       |           |   |           JpaBaseConfiguration__BeanDefinitions$PersistenceManagedTypesConfiguration.class
+|       |       |           |   |           JpaBaseConfiguration__BeanDefinitions.class
+|       |       |           |   |           JpaProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---netty
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           NettyAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           NettyProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---persistence
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           PersistenceExceptionTranslationAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---reactor
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           ReactorAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           ReactorProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---servlet
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |           HttpEncodingAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           MultipartAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |           MultipartProperties__BeanDefinitions.class
+|       |       |           |   |           ServletEncodingProperties__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---sql
+|       |       |           |   |   +---autoconfigure
+|       |       |           |   |   |   \---init
+|       |       |           |   |   |           SqlInitializationProperties__BeanDefinitions.class
+|       |       |           |   |   |           
+|       |       |           |   |   \---init
+|       |       |           |   |       \---dependency
+|       |       |           |   |               DatabaseInitializationDependencyConfigurer__BeanDefinitions$DependsOnDatabaseInitializationPostProcessor.class
+|       |       |           |   |               DatabaseInitializationDependencyConfigurer__BeanDefinitions.class
+|       |       |           |   |               
+|       |       |           |   +---tomcat
+|       |       |           |   |   \---autoconfigure
+|       |       |           |   |       |   TomcatServerProperties__BeanDefinitions.class
+|       |       |           |   |       |   TomcatWebServerConfiguration__BeanDefinitions$TomcatWebSocketConfiguration.class
+|       |       |           |   |       |   TomcatWebServerConfiguration__BeanDefinitions.class
+|       |       |           |   |       |   
+|       |       |           |   |       \---servlet
+|       |       |           |   |               TomcatServletWebServerAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |               
+|       |       |           |   +---transaction
+|       |       |           |   |   +---autoconfigure
+|       |       |           |   |   |       TransactionAutoConfiguration__BeanDefinitions$EnableTransactionManagementConfiguration.class
+|       |       |           |   |   |       TransactionAutoConfiguration__BeanDefinitions$TransactionTemplateConfiguration.class
+|       |       |           |   |   |       TransactionAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       TransactionManagerCustomizationAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       TransactionProperties__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   \---jta
+|       |       |           |   |       \---autoconfigure
+|       |       |           |   |               JtaAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |               
+|       |       |           |   +---validation
+|       |       |           |   |   +---autoconfigure
+|       |       |           |   |   |       ValidationAutoConfiguration__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   \---beanvalidation
+|       |       |           |   |           MethodValidationExcludeFilter__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   +---web
+|       |       |           |   |   +---error
+|       |       |           |   |   |       ErrorPageRegistrarBeanPostProcessor__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   \---server
+|       |       |           |   |       |   WebServerFactoryCustomizerBeanPostProcessor__BeanDefinitions.class
+|       |       |           |   |       |   
+|       |       |           |   |       \---autoconfigure
+|       |       |           |   |           |   ServerProperties__BeanDefinitions.class
+|       |       |           |   |           |   
+|       |       |           |   |           \---servlet
+|       |       |           |   |                   ServletWebServerConfiguration__BeanDefinitions.class
+|       |       |           |   |                   
+|       |       |           |   \---webmvc
+|       |       |           |       \---autoconfigure
+|       |       |           |           |   DispatcherServletAutoConfiguration__BeanDefinitions$DispatcherServletConfiguration.class
+|       |       |           |           |   DispatcherServletAutoConfiguration__BeanDefinitions$DispatcherServletRegistrationConfiguration.class
+|       |       |           |           |   DispatcherServletAutoConfiguration__BeanDefinitions.class
+|       |       |           |           |   WebMvcAutoConfiguration_EnableWebMvcConfiguration__Autowiring.class
+|       |       |           |           |   WebMvcAutoConfiguration__BeanDefinitions$EnableWebMvcConfiguration.class
+|       |       |           |           |   WebMvcAutoConfiguration__BeanDefinitions$WebMvcAutoConfigurationAdapter.class
+|       |       |           |           |   WebMvcAutoConfiguration__BeanDefinitions.class
+|       |       |           |           |   WebMvcProperties__BeanDefinitions.class
+|       |       |           |           |   
+|       |       |           |           \---error
+|       |       |           |                   ErrorMvcAutoConfiguration__BeanDefinitions$DefaultErrorViewResolverConfiguration.class
+|       |       |           |                   ErrorMvcAutoConfiguration__BeanDefinitions$WhitelabelErrorViewConfiguration.class
+|       |       |           |                   ErrorMvcAutoConfiguration__BeanDefinitions.class
+|       |       |           |                   
+|       |       |           +---context
+|       |       |           |   \---event
+|       |       |           |           DefaultEventListenerFactory__BeanDefinitions.class
+|       |       |           |           EventListenerMethodProcessor__BeanDefinitions.class
+|       |       |           |           
+|       |       |           +---data
+|       |       |           |   +---jpa
+|       |       |           |   |   +---mapping
+|       |       |           |   |   |       JpaMetamodelMappingContext__BeanDefinitions.class
+|       |       |           |   |   |       
+|       |       |           |   |   +---repository
+|       |       |           |   |   |   \---support
+|       |       |           |   |   |           DefaultJpaContext__BeanDefinitions.class
+|       |       |           |   |   |           JpaEvaluationContextExtension__BeanDefinitions.class
+|       |       |           |   |   |           
+|       |       |           |   |   \---util
+|       |       |           |   |           JpaMetamodelCacheCleanup__BeanDefinitions.class
+|       |       |           |   |           
+|       |       |           |   \---web
+|       |       |           |       \---config
+|       |       |           |               ProjectingArgumentResolverRegistrar__BeanDefinitions.class
+|       |       |           |               SpringDataJackson3Configuration__Autowiring.class
+|       |       |           |               SpringDataJackson3Configuration__BeanDefinitions.class
+|       |       |           |               SpringDataWebConfiguration__BeanDefinitions.class
+|       |       |           |               
+|       |       |           +---orm
+|       |       |           |   \---jpa
+|       |       |           |           SharedEntityManagerCreator__BeanDefinitions.class
+|       |       |           |           
+|       |       |           \---transaction
+|       |       |               \---annotation
+|       |       |                       AbstractTransactionManagementConfiguration__BeanDefinitions.class
+|       |       |                       ProxyTransactionManagementConfiguration__Autowiring.class
+|       |       |                       ProxyTransactionManagementConfiguration__BeanDefinitions.class
+|       |       |                       
+|       |       +---resources
+|       |       |   \---META-INF
+|       |       |       \---native-image
+|       |       |           \---cl.duoc
+|       |       |               \---lesiones
+|       |       |                       native-image.properties
+|       |       |                       reachability-metadata.json
+|       |       |                       
+|       |       \---sources
+|       |           +---cl
+|       |           |   \---duoc
+|       |           |       \---lesiones
+|       |           |               LesionesApplication__ApplicationContextInitializer.java
+|       |           |               LesionesApplication__BeanDefinitions.java
+|       |           |               LesionesApplication__BeanFactoryRegistrations.java
+|       |           |               
+|       |           \---org
+|       |               \---springframework
+|       |                   +---aop
+|       |                   |   +---aspectj
+|       |                   |   |   \---annotation
+|       |                   |   |           AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   \---framework
+|       |                   |           ProxyConfig__BeanDefinitions.java
+|       |                   |           
+|       |                   +---boot
+|       |                   |   +---autoconfigure
+|       |                   |   |   |   AutoConfigurationPackages__BeanDefinitions.java
+|       |                   |   |   |   
+|       |                   |   |   +---aop
+|       |                   |   |   |       AopAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---availability
+|       |                   |   |   |       ApplicationAvailabilityAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---context
+|       |                   |   |   |       ConfigurationPropertiesAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       LifecycleAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       LifecycleProperties__BeanDefinitions.java
+|       |                   |   |   |       PropertyPlaceholderAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---info
+|       |                   |   |   |       ProjectInfoAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       ProjectInfoProperties__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---ssl
+|       |                   |   |   |       SslAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       SslProperties__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---task
+|       |                   |   |   |       TaskExecutionAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       TaskExecutionProperties__BeanDefinitions.java
+|       |                   |   |   |       TaskExecutorConfigurations__BeanDefinitions.java
+|       |                   |   |   |       TaskSchedulingAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       TaskSchedulingConfigurations__BeanDefinitions.java
+|       |                   |   |   |       TaskSchedulingProperties__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   \---web
+|       |                   |   |           WebProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---context
+|       |                   |   |   \---properties
+|       |                   |   |           BoundConfigurationProperties__BeanDefinitions.java
+|       |                   |   |           ConfigurationPropertiesBinder__BeanDefinitions.java
+|       |                   |   |           ConfigurationPropertiesBindingPostProcessor__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---data
+|       |                   |   |   +---autoconfigure
+|       |                   |   |   |   \---web
+|       |                   |   |   |           DataWebAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |           DataWebProperties__BeanDefinitions.java
+|       |                   |   |   |           
+|       |                   |   |   \---jpa
+|       |                   |   |       \---autoconfigure
+|       |                   |   |               DataJpaRepositoriesAutoConfiguration__BeanDefinitions.java
+|       |                   |   |               
+|       |                   |   +---hibernate
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           HibernateJpaAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           HibernateJpaConfiguration__BeanDefinitions.java
+|       |                   |   |           HibernateProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---http
+|       |                   |   |   +---codec
+|       |                   |   |   |   \---autoconfigure
+|       |                   |   |   |           CodecsAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |           HttpCodecsProperties__BeanDefinitions.java
+|       |                   |   |   |           
+|       |                   |   |   \---converter
+|       |                   |   |       \---autoconfigure
+|       |                   |   |               HttpMessageConvertersAutoConfiguration__BeanDefinitions.java
+|       |                   |   |               HttpMessageConvertersProperties__BeanDefinitions.java
+|       |                   |   |               Jackson2HttpMessageConvertersConfiguration__BeanDefinitions.java
+|       |                   |   |               JacksonHttpMessageConvertersConfiguration__BeanDefinitions.java
+|       |                   |   |               
+|       |                   |   +---jackson
+|       |                   |   |   |   JacksonMixinModuleEntries__BeanDefinitions.java
+|       |                   |   |   |   
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           JacksonAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           JacksonProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---jdbc
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           DataSourceAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           DataSourceConfiguration__BeanDefinitions.java
+|       |                   |   |           DataSourceInitializationAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           DataSourcePoolMetadataProvidersConfiguration__BeanDefinitions.java
+|       |                   |   |           DataSourceProperties__BeanDefinitions.java
+|       |                   |   |           DataSourceTransactionManagerAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           JdbcClientAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           JdbcProperties__BeanDefinitions.java
+|       |                   |   |           JdbcTemplateAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           JdbcTemplateConfiguration__BeanDefinitions.java
+|       |                   |   |           NamedParameterJdbcTemplateConfiguration__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---jpa
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           JpaBaseConfiguration__BeanDefinitions.java
+|       |                   |   |           JpaProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---netty
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           NettyAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           NettyProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---persistence
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           PersistenceExceptionTranslationAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---reactor
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           ReactorAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           ReactorProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---servlet
+|       |                   |   |   \---autoconfigure
+|       |                   |   |           HttpEncodingAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           MultipartAutoConfiguration__BeanDefinitions.java
+|       |                   |   |           MultipartProperties__BeanDefinitions.java
+|       |                   |   |           ServletEncodingProperties__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---sql
+|       |                   |   |   +---autoconfigure
+|       |                   |   |   |   \---init
+|       |                   |   |   |           SqlInitializationProperties__BeanDefinitions.java
+|       |                   |   |   |           
+|       |                   |   |   \---init
+|       |                   |   |       \---dependency
+|       |                   |   |               DatabaseInitializationDependencyConfigurer__BeanDefinitions.java
+|       |                   |   |               
+|       |                   |   +---tomcat
+|       |                   |   |   \---autoconfigure
+|       |                   |   |       |   TomcatServerProperties__BeanDefinitions.java
+|       |                   |   |       |   TomcatWebServerConfiguration__BeanDefinitions.java
+|       |                   |   |       |   
+|       |                   |   |       \---servlet
+|       |                   |   |               TomcatServletWebServerAutoConfiguration__BeanDefinitions.java
+|       |                   |   |               
+|       |                   |   +---transaction
+|       |                   |   |   +---autoconfigure
+|       |                   |   |   |       TransactionAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       TransactionManagerCustomizationAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       TransactionProperties__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   \---jta
+|       |                   |   |       \---autoconfigure
+|       |                   |   |               JtaAutoConfiguration__BeanDefinitions.java
+|       |                   |   |               
+|       |                   |   +---validation
+|       |                   |   |   +---autoconfigure
+|       |                   |   |   |       ValidationAutoConfiguration__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   \---beanvalidation
+|       |                   |   |           MethodValidationExcludeFilter__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   +---web
+|       |                   |   |   +---error
+|       |                   |   |   |       ErrorPageRegistrarBeanPostProcessor__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   \---server
+|       |                   |   |       |   WebServerFactoryCustomizerBeanPostProcessor__BeanDefinitions.java
+|       |                   |   |       |   
+|       |                   |   |       \---autoconfigure
+|       |                   |   |           |   ServerProperties__BeanDefinitions.java
+|       |                   |   |           |   
+|       |                   |   |           \---servlet
+|       |                   |   |                   ServletWebServerConfiguration__BeanDefinitions.java
+|       |                   |   |                   
+|       |                   |   \---webmvc
+|       |                   |       \---autoconfigure
+|       |                   |           |   DispatcherServletAutoConfiguration__BeanDefinitions.java
+|       |                   |           |   WebMvcAutoConfiguration_EnableWebMvcConfiguration__Autowiring.java
+|       |                   |           |   WebMvcAutoConfiguration__BeanDefinitions.java
+|       |                   |           |   WebMvcProperties__BeanDefinitions.java
+|       |                   |           |   
+|       |                   |           \---error
+|       |                   |                   ErrorMvcAutoConfiguration__BeanDefinitions.java
+|       |                   |                   
+|       |                   +---context
+|       |                   |   \---event
+|       |                   |           DefaultEventListenerFactory__BeanDefinitions.java
+|       |                   |           EventListenerMethodProcessor__BeanDefinitions.java
+|       |                   |           
+|       |                   +---data
+|       |                   |   +---jpa
+|       |                   |   |   +---mapping
+|       |                   |   |   |       JpaMetamodelMappingContext__BeanDefinitions.java
+|       |                   |   |   |       
+|       |                   |   |   +---repository
+|       |                   |   |   |   \---support
+|       |                   |   |   |           DefaultJpaContext__BeanDefinitions.java
+|       |                   |   |   |           JpaEvaluationContextExtension__BeanDefinitions.java
+|       |                   |   |   |           
+|       |                   |   |   \---util
+|       |                   |   |           JpaMetamodelCacheCleanup__BeanDefinitions.java
+|       |                   |   |           
+|       |                   |   \---web
+|       |                   |       \---config
+|       |                   |               ProjectingArgumentResolverRegistrar__BeanDefinitions.java
+|       |                   |               SpringDataJackson3Configuration__Autowiring.java
+|       |                   |               SpringDataJackson3Configuration__BeanDefinitions.java
+|       |                   |               SpringDataWebConfiguration__BeanDefinitions.java
+|       |                   |               
+|       |                   +---orm
+|       |                   |   \---jpa
+|       |                   |           SharedEntityManagerCreator__BeanDefinitions.java
+|       |                   |           
+|       |                   \---transaction
+|       |                       \---annotation
+|       |                               AbstractTransactionManagementConfiguration__BeanDefinitions.java
+|       |                               ProxyTransactionManagementConfiguration__Autowiring.java
+|       |                               ProxyTransactionManagementConfiguration__BeanDefinitions.java
+|       |                               
+|       \---test-classes
+|           \---cl
+|               \---duoc
+|                   \---lesiones
+|                           LesionesApplicationTests.class
+|                           
++---ligas-del-mundo-alonso-entrenadores
+|   |   README.md
+|   |   
+|   \---entrenadores
+|       |   .gitattributes
+|       |   .gitignore
+|       |   mvnw
+|       |   mvnw.cmd
+|       |   pom.xml
+|       |   
+|       +---.mvn
+|       |   \---wrapper
+|       |           maven-wrapper.properties
+|       |           
+|       +---src
+|       |   +---main
+|       |   |   +---java
+|       |   |   |   \---duoc
+|       |   |   |       \---cl
+|       |   |   |           \---entrenadores
+|       |   |   |               |   EntrenadoresApplication.java
+|       |   |   |               |   
+|       |   |   |               +---client
+|       |   |   |               |       ClubClient.java
+|       |   |   |               |       EntrenadorClient.java
+|       |   |   |               |       
+|       |   |   |               +---config
+|       |   |   |               |       WebClientConfig.java
+|       |   |   |               |       
+|       |   |   |               +---controller
+|       |   |   |               |       EntrenadorController.java
+|       |   |   |               |       
+|       |   |   |               +---dto
+|       |   |   |               |   |   DtoApiError.java
+|       |   |   |               |   |   
+|       |   |   |               |   +---request
+|       |   |   |               |   |       DtoEntrenadorRequest.java
+|       |   |   |               |   |       
+|       |   |   |               |   \---response
+|       |   |   |               |           DtoControllerEntrenadores.java
+|       |   |   |               |           
+|       |   |   |               +---exception
+|       |   |   |               |       GlobalExceptionHandler.java
+|       |   |   |               |       ResourceNotFoundException.java
+|       |   |   |               |       
+|       |   |   |               +---model
+|       |   |   |               |       EntrenadorModel.java
+|       |   |   |               |       
+|       |   |   |               +---repository
+|       |   |   |               |       EntrenadorRepository.java
+|       |   |   |               |       
+|       |   |   |               +---security
+|       |   |   |               |       JwtValidationFilter.java
+|       |   |   |               |       SecurityConfig.java
+|       |   |   |               |       
+|       |   |   |               \---service
+|       |   |   |                       EntrenadorService.java
+|       |   |   |                       
+|       |   |   \---resources
+|       |   |           application-dev.properties
+|       |   |           application-test.properties
+|       |   |           application.properties
+|       |   |           
+|       |   \---test
+|       |       \---java
+|       |           \---duoc
+|       |               \---cl
+|       |                   \---entrenadores
+|       |                           EntrenadoresApplicationTests.java
+|       |                           
+|       \---target
+|           +---classes
+|           |   |   application-dev.properties
+|           |   |   application-test.properties
+|           |   |   application.properties
+|           |   |   
+|           |   \---duoc
+|           |       \---cl
+|           |           \---entrenadores
+|           |               |   EntrenadoresApplication.class
+|           |               |   
+|           |               +---client
+|           |               |       ClubClient.class
+|           |               |       EntrenadorClient.class
+|           |               |       
+|           |               +---config
+|           |               |       WebClientConfig.class
+|           |               |       
+|           |               +---controller
+|           |               |       EntrenadorController.class
+|           |               |       
+|           |               +---dto
+|           |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|           |               |   |   DtoApiError.class
+|           |               |   |   
+|           |               |   +---request
+|           |               |   |       DtoEntrenadorRequest.class
+|           |               |   |       
+|           |               |   \---response
+|           |               |           DtoControllerEntrenadores$DtoControllerEntrenadoresBuilder.class
+|           |               |           DtoControllerEntrenadores.class
+|           |               |           
+|           |               +---exception
+|           |               |       GlobalExceptionHandler.class
+|           |               |       ResourceNotFoundException.class
+|           |               |       
+|           |               +---model
+|           |               |       EntrenadorModel.class
+|           |               |       
+|           |               +---repository
+|           |               |       EntrenadorRepository.class
+|           |               |       
+|           |               +---security
+|           |               |       JwtValidationFilter.class
+|           |               |       SecurityConfig.class
+|           |               |       
+|           |               \---service
+|           |                       EntrenadorService.class
+|           |                       
+|           +---generated-sources
+|           |   \---annotations
+|           +---generated-test-sources
+|           |   \---test-annotations
+|           \---test-classes
+|               \---duoc
+|                   \---cl
+|                       \---entrenadores
+|                               EntrenadoresApplicationTests.class
+|                               
++---ligas-del-mundo-alonso-estadios
+|   |   README.md
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---estadios
+|       \---estadios
+|           |   .gitattributes
+|           |   .gitignore
+|           |   mvnw
+|           |   mvnw.cmd
+|           |   pom.xml
+|           |   
+|           +---.github
+|           |   \---java-upgrade
+|           |       |   .gitignore
+|           |       |   
+|           |       \---hooks
+|           |           \---scripts
+|           |                   recordToolUse.ps1
+|           |                   recordToolUse.sh
+|           |                   
+|           +---.mvn
+|           |   \---wrapper
+|           |           maven-wrapper.properties
+|           |           
+|           +---src
+|           |   +---main
+|           |   |   +---java
+|           |   |   |   \---duoc
+|           |   |   |       \---cl
+|           |   |   |           \---estadios
+|           |   |   |               |   EstadiosApplication.java
+|           |   |   |               |   
+|           |   |   |               +---client
+|           |   |   |               |       PaisClient.java
+|           |   |   |               |       
+|           |   |   |               +---config
+|           |   |   |               |       WebClientConfig.java
+|           |   |   |               |       
+|           |   |   |               +---controller
+|           |   |   |               |       EstadioController.java
+|           |   |   |               |       
+|           |   |   |               +---dto
+|           |   |   |               |   |   DtoApiError.java
+|           |   |   |               |   |   
+|           |   |   |               |   +---request
+|           |   |   |               |   |       DtoEstadioRequest.java
+|           |   |   |               |   |       
+|           |   |   |               |   \---response
+|           |   |   |               |           DtoEstadioResponse.java
+|           |   |   |               |           
+|           |   |   |               +---exception
+|           |   |   |               |       GlobalExceptionHandler.java
+|           |   |   |               |       ResourceNotFoundException.java
+|           |   |   |               |       
+|           |   |   |               +---model
+|           |   |   |               |       EstadioModel.java
+|           |   |   |               |       
+|           |   |   |               +---repository
+|           |   |   |               |       EstadioRepository.java
+|           |   |   |               |       
+|           |   |   |               +---security
+|           |   |   |               |       JwtValidationFilter.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               \---service
+|           |   |   |                       EstadioService.java
+|           |   |   |                       
+|           |   |   \---resources
+|           |   |           appliacation-test.properties
+|           |   |           application-dev.properties
+|           |   |           application.properties
+|           |   |           
+|           |   \---test
+|           |       \---java
+|           |           \---duoc
+|           |               \---cl
+|           |                   \---estadios
+|           |                           EstadiosApplicationTests.java
+|           |                           
+|           \---target
+|               +---classes
+|               |   |   appliacation-test.properties
+|               |   |   application-dev.properties
+|               |   |   application.properties
+|               |   |   
+|               |   \---duoc
+|               |       \---cl
+|               |           \---estadios
+|               |               |   EstadiosApplication.class
+|               |               |   
+|               |               +---client
+|               |               |       PaisClient.class
+|               |               |       
+|               |               +---config
+|               |               |       WebClientConfig.class
+|               |               |       
+|               |               +---controller
+|               |               |       EstadioController.class
+|               |               |       
+|               |               +---dto
+|               |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|               |               |   |   DtoApiError.class
+|               |               |   |   
+|               |               |   +---request
+|               |               |   |       DtoEstadioRequest.class
+|               |               |   |       
+|               |               |   \---response
+|               |               |           DtoEstadioResponse$DtoEstadioResponseBuilder.class
+|               |               |           DtoEstadioResponse.class
+|               |               |           
+|               |               +---exception
+|               |               |       GlobalExceptionHandler.class
+|               |               |       ResourceNotFoundException.class
+|               |               |       
+|               |               +---model
+|               |               |       EstadioModel.class
+|               |               |       
+|               |               +---repository
+|               |               |       EstadioRepository.class
+|               |               |       
+|               |               +---security
+|               |               |       JwtValidationFilter.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               \---service
+|               |                       EstadioService.class
+|               |                       
+|               +---generated-sources
+|               |   \---annotations
+|               +---generated-test-sources
+|               |   \---test-annotations
+|               \---test-classes
+|                   \---duoc
+|                       \---cl
+|                           \---estadios
+|                                   EstadiosApplicationTests.class
+|                                   
++---ligas-del-mundo-alonso-paises
+|   |   README.md
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---paises
+|       |   .gitattributes
+|       |   .gitignore
+|       |   mvnw
+|       |   mvnw.cmd
+|       |   pom.xml
+|       |   
+|       +---.github
+|       |   \---java-upgrade
+|       |       |   .gitignore
+|       |       |   
+|       |       \---hooks
+|       |           \---scripts
+|       |                   recordToolUse.ps1
+|       |                   recordToolUse.sh
+|       |                   
+|       +---.mvn
+|       |   \---wrapper
+|       |           maven-wrapper.properties
+|       |           
+|       +---src
+|       |   +---main
+|       |   |   +---java
+|       |   |   |   \---duoc
+|       |   |   |       \---cl
+|       |   |   |           \---paises
+|       |   |   |               |   PaisesApplication.java
+|       |   |   |               |   
+|       |   |   |               +---client
+|       |   |   |               |       PaisClient.java
+|       |   |   |               |       
+|       |   |   |               +---config
+|       |   |   |               |       WebClientConfig.java
+|       |   |   |               |       
+|       |   |   |               +---controller
+|       |   |   |               |       PaisController.java
+|       |   |   |               |       
+|       |   |   |               +---dto
+|       |   |   |               |   |   DtoApiError.java
+|       |   |   |               |   |   
+|       |   |   |               |   +---request
+|       |   |   |               |   |       DtoPaisRequest.java
+|       |   |   |               |   |       
+|       |   |   |               |   \---response
+|       |   |   |               |           DtoPaisResponse.java
+|       |   |   |               |           
+|       |   |   |               +---exception
+|       |   |   |               |       GlobalExceptionHandler.java
+|       |   |   |               |       ResourceNotFoundException.java
+|       |   |   |               |       
+|       |   |   |               +---model
+|       |   |   |               |       PaisModel.java
+|       |   |   |               |       
+|       |   |   |               +---repository
+|       |   |   |               |       PaisRepository.java
+|       |   |   |               |       
+|       |   |   |               +---security
+|       |   |   |               |       JwtValidationFilter.java
+|       |   |   |               |       SecurityConfig.java
+|       |   |   |               |       
+|       |   |   |               \---service
+|       |   |   |                       PaisService.java
+|       |   |   |                       
+|       |   |   \---resources
+|       |   |           application-dev.properties
+|       |   |           application-test.properties
+|       |   |           application.properties
+|       |   |           
+|       |   \---test
+|       |       \---java
+|       |           \---duoc
+|       |               \---cl
+|       |                   \---paises
+|       |                           PaisesApplicationTests.java
+|       |                           
+|       \---target
+|           +---classes
+|           |   |   application-dev.properties
+|           |   |   application-test.properties
+|           |   |   application.properties
+|           |   |   
+|           |   \---duoc
+|           |       \---cl
+|           |           \---paises
+|           |               |   PaisesApplication.class
+|           |               |   
+|           |               +---client
+|           |               |       PaisClient.class
+|           |               |       
+|           |               +---config
+|           |               |       WebClientConfig.class
+|           |               |       
+|           |               +---controller
+|           |               |       PaisController.class
+|           |               |       
+|           |               +---dto
+|           |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|           |               |   |   DtoApiError.class
+|           |               |   |   
+|           |               |   +---request
+|           |               |   |       DtoPaisRequest.class
+|           |               |   |       
+|           |               |   \---response
+|           |               |           DtoPaisResponse$DtoPaisResponseBuilder.class
+|           |               |           DtoPaisResponse.class
+|           |               |           
+|           |               +---exception
+|           |               |       GlobalExceptionHandler.class
+|           |               |       ResourceNotFoundException.class
+|           |               |       
+|           |               +---model
+|           |               |       PaisModel.class
+|           |               |       
+|           |               +---repository
+|           |               |       PaisRepository.class
+|           |               |       
+|           |               +---security
+|           |               |       JwtValidationFilter.class
+|           |               |       SecurityConfig.class
+|           |               |       
+|           |               \---service
+|           |                       PaisService.class
+|           |                       
+|           +---generated-sources
+|           |   \---annotations
+|           +---generated-test-sources
+|           |   \---test-annotations
+|           \---test-classes
+|               \---duoc
+|                   \---cl
+|                       \---paises
+|                               PaisesApplicationTests.class
+|                               
++---ligas-del-mundo-alonso-servicio-clubes
+|   |   .gitattributes
+|   |   .gitignore
+|   |   mvnw
+|   |   mvnw.cmd
+|   |   pom.xml
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   +---.mvn
+|   |   \---wrapper
+|   |           maven-wrapper.properties
+|   |           
+|   +---src
+|   |   +---main
+|   |   |   +---java
+|   |   |   |   \---duoc
+|   |   |   |       \---cl
+|   |   |   |           \---clubes
+|   |   |   |               |   ClubesApplication.java
+|   |   |   |               |   
+|   |   |   |               +---client
+|   |   |   |               |       LigasClient.java
+|   |   |   |               |       
+|   |   |   |               +---config
+|   |   |   |               |       WebClientConfig.java
+|   |   |   |               |       
+|   |   |   |               +---controller
+|   |   |   |               |       ClubesController.java
+|   |   |   |               |       
+|   |   |   |               +---dto
+|   |   |   |               |   |   DtoApiError.java
+|   |   |   |               |   |   
+|   |   |   |               |   +---request
+|   |   |   |               |   |       DtoClubesRequest.java
+|   |   |   |               |   |       
+|   |   |   |               |   \---response
+|   |   |   |               |           DtoClubesResponse.java
+|   |   |   |               |           
+|   |   |   |               +---exception
+|   |   |   |               |       GlobalExceptionHandler.java
+|   |   |   |               |       ResourceNotFoundException.java
+|   |   |   |               |       
+|   |   |   |               +---model
+|   |   |   |               |       ClubesModel.java
+|   |   |   |               |       
+|   |   |   |               +---repository
+|   |   |   |               |       ClubesRepository.java
+|   |   |   |               |       
+|   |   |   |               +---security
+|   |   |   |               |       JwtValidationFilter.java
+|   |   |   |               |       SecurityConfig.java
+|   |   |   |               |       
+|   |   |   |               \---service
+|   |   |   |                       ClubesService.java
+|   |   |   |                       
+|   |   |   \---resources
+|   |   |           application-dev.properties
+|   |   |           application.properties
+|   |   |           
+|   |   \---test
+|   |       \---java
+|   |           \---duoc
+|   |               \---cl
+|   |                   \---clubes
+|   |                           ClubesApplicationTests.java
+|   |                           
+|   \---target
+|       +---classes
+|       |   |   application-dev.properties
+|       |   |   application.properties
+|       |   |   
+|       |   \---duoc
+|       |       \---cl
+|       |           \---clubes
+|       |               |   ClubesApplication.class
+|       |               |   
+|       |               +---client
+|       |               |       LigasClient.class
+|       |               |       
+|       |               +---config
+|       |               |       WebClientConfig.class
+|       |               |       
+|       |               +---controller
+|       |               |       ClubesController.class
+|       |               |       
+|       |               +---dto
+|       |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|       |               |   |   DtoApiError.class
+|       |               |   |   
+|       |               |   +---request
+|       |               |   |       DtoClubesRequest.class
+|       |               |   |       
+|       |               |   \---response
+|       |               |           DtoClubesResponse.class
+|       |               |           
+|       |               +---exception
+|       |               |       GlobalExceptionHandler.class
+|       |               |       ResourceNotFoundException.class
+|       |               |       
+|       |               +---model
+|       |               |       ClubesModel.class
+|       |               |       
+|       |               +---repository
+|       |               |       ClubesRepository.class
+|       |               |       
+|       |               +---security
+|       |               |       JwtValidationFilter.class
+|       |               |       SecurityConfig.class
+|       |               |       
+|       |               \---service
+|       |                       ClubesService.class
+|       |                       
+|       +---generated-sources
+|       |   \---annotations
+|       +---generated-test-sources
+|       |   \---test-annotations
+|       \---test-classes
+|           \---duoc
+|               \---cl
+|                   \---clubes
+|                           ClubesApplicationTests.class
+|                           
++---ligas-del-mundo-basti-auth
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---auth
+|       |   solicitudesTratamiento.rest
+|       |   
+|       \---auth
+|           |   HELP.md
+|           |   mvnw
+|           |   mvnw.cmd
+|           |   pom.xml
+|           |   
+|           +---src
+|           |   +---main
+|           |   |   +---java
+|           |   |   |   \---com
+|           |   |   |       \---example
+|           |   |   |           \---auth
+|           |   |   |               |   AuthApplication.java
+|           |   |   |               |   
+|           |   |   |               +---client
+|           |   |   |               |       UsuarioClient.java
+|           |   |   |               |       
+|           |   |   |               +---config
+|           |   |   |               |       JwtConfig.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               +---controller
+|           |   |   |               |       AuthController.java
+|           |   |   |               |       
+|           |   |   |               +---dto
+|           |   |   |               |       LoginRequestDto.java
+|           |   |   |               |       LoginResponseDto.java
+|           |   |   |               |       UsuarioDto.java
+|           |   |   |               |       
+|           |   |   |               +---model
+|           |   |   |               +---security
+|           |   |   |               |       JwtValidationFilter.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               +---service
+|           |   |   |               |       AuthService.java
+|           |   |   |               |       JwtService.java
+|           |   |   |               |       
+|           |   |   |               \---UsuarioModel
+|           |   |   \---resources
+|           |   |           application.properties
+|           |   |           
+|           |   \---test
+|           |       \---java
+|           |           \---com
+|           |               \---example
+|           |                   \---auth
+|           |                           AuthApplicationTests.java
+|           |                           
+|           \---target
+|               +---classes
+|               |   |   application.properties
+|               |   |   
+|               |   \---com
+|               |       \---example
+|               |           \---auth
+|               |               |   AuthApplication.class
+|               |               |   
+|               |               +---client
+|               |               |       UsuarioClient.class
+|               |               |       
+|               |               +---config
+|               |               |       JwtConfig.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               +---controller
+|               |               |       AuthController.class
+|               |               |       
+|               |               +---dto
+|               |               |       LoginRequestDto.class
+|               |               |       LoginResponseDto$LoginResponseDtoBuilder.class
+|               |               |       LoginResponseDto.class
+|               |               |       UsuarioDto.class
+|               |               |       
+|               |               +---model
+|               |               +---security
+|               |               |       JwtValidationFilter.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               +---service
+|               |               |       AuthService.class
+|               |               |       JwtService.class
+|               |               |       
+|               |               \---UsuarioModel
+|               +---generated-sources
+|               |   \---annotations
+|               +---generated-test-sources
+|               |   \---test-annotations
+|               \---test-classes
+|                   \---com
+|                       \---example
+|                           \---auth
+|                                   AuthApplicationTests.class
+|                                   
++---ligas-del-mundo-basti-partidos
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---partidos
+|       |   solicitudesTratamiento.rest
+|       |   
+|       \---partidos
+|           |   HELP.md
+|           |   mvnw
+|           |   mvnw.cmd
+|           |   pom.xml
+|           |   
+|           +---src
+|           |   +---main
+|           |   |   +---java
+|           |   |   |   \---com
+|           |   |   |       \---example
+|           |   |   |           \---partidos
+|           |   |   |               |   PartidosApplication.java
+|           |   |   |               |   
+|           |   |   |               +---client
+|           |   |   |               |       ClubClient.java
+|           |   |   |               |       EstadioClient.java
+|           |   |   |               |       LigaClient.java
+|           |   |   |               |       
+|           |   |   |               +---config
+|           |   |   |               |       WebClientConfig.java
+|           |   |   |               |       
+|           |   |   |               +---controller
+|           |   |   |               |       PartidoController.java
+|           |   |   |               |       
+|           |   |   |               +---dto
+|           |   |   |               |       ClubDto.java
+|           |   |   |               |       EstadioDto.java
+|           |   |   |               |       LigaDto.java
+|           |   |   |               |       PartidoRequestDto.java
+|           |   |   |               |       
+|           |   |   |               +---model
+|           |   |   |               |       Partido.java
+|           |   |   |               |       
+|           |   |   |               +---repository
+|           |   |   |               |       PartidoRepository.java
+|           |   |   |               |       
+|           |   |   |               +---security
+|           |   |   |               |       JwtValidationFilter.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               \---service
+|           |   |   |                       PartidoService.java
+|           |   |   |                       
+|           |   |   \---resources
+|           |   |           application.properties
+|           |   |           
+|           |   \---test
+|           |       \---java
+|           |           \---com
+|           |               \---example
+|           |                   \---partidos
+|           |                           PartidosApplicationTests.java
+|           |                           
+|           \---target
+|               +---classes
+|               |   |   application.properties
+|               |   |   
+|               |   \---com
+|               |       \---example
+|               |           \---partidos
+|               |               |   PartidosApplication.class
+|               |               |   
+|               |               +---client
+|               |               |       ClubClient.class
+|               |               |       EstadioClient.class
+|               |               |       LigaClient.class
+|               |               |       
+|               |               +---config
+|               |               |       WebClientConfig.class
+|               |               |       
+|               |               +---controller
+|               |               |       PartidoController.class
+|               |               |       
+|               |               +---dto
+|               |               |       ClubDto.class
+|               |               |       EstadioDto.class
+|               |               |       LigaDto.class
+|               |               |       PartidoRequestDto.class
+|               |               |       
+|               |               +---model
+|               |               |       Partido$PartidoBuilder.class
+|               |               |       Partido.class
+|               |               |       
+|               |               +---repository
+|               |               |       PartidoRepository.class
+|               |               |       
+|               |               +---security
+|               |               |       JwtValidationFilter.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               \---service
+|               |                       PartidoService.class
+|               |                       
+|               +---generated-sources
+|               |   \---annotations
+|               +---generated-test-sources
+|               |   \---test-annotations
+|               \---test-classes
+|                   \---com
+|                       \---example
+|                           \---partidos
+|                                   PartidosApplicationTests.class
+|                                   
++---ligas-del-mundo-basti-posiciones
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---posiciones
+|       |   solicitudesTratamiento.rest
+|       |   
+|       \---posiciones
+|           |   HELP.md
+|           |   mvnw
+|           |   mvnw.cmd
+|           |   pom.xml
+|           |   
+|           +---src
+|           |   +---main
+|           |   |   +---java
+|           |   |   |   \---com
+|           |   |   |       \---example
+|           |   |   |           \---posiciones
+|           |   |   |               |   PosicionesApplication.java
+|           |   |   |               |   
+|           |   |   |               +---client
+|           |   |   |               |       PartidoClient.java
+|           |   |   |               |       
+|           |   |   |               +---config
+|           |   |   |               |       WebClientConfig.java
+|           |   |   |               |       
+|           |   |   |               +---controller
+|           |   |   |               |       PosicionController.java
+|           |   |   |               |       
+|           |   |   |               +---dto
+|           |   |   |               |       PartidoResponseDto.java
+|           |   |   |               |       PosicionRequestDto.java
+|           |   |   |               |       PosicionResponseDto.java
+|           |   |   |               |       
+|           |   |   |               +---model
+|           |   |   |               |       Posicion.java
+|           |   |   |               |       
+|           |   |   |               +---repository
+|           |   |   |               |       PosicionRepository.java
+|           |   |   |               |       
+|           |   |   |               +---security
+|           |   |   |               |       JwtValidationFilter.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               \---service
+|           |   |   |                       PosicionService.java
+|           |   |   |                       
+|           |   |   \---resources
+|           |   |           application.properties
+|           |   |           
+|           |   \---test
+|           |       \---java
+|           |           \---com
+|           |               \---example
+|           |                   \---posiciones
+|           |                           PosicionesApplicationTests.java
+|           |                           
+|           \---target
+|               +---classes
+|               |   |   application.properties
+|               |   |   
+|               |   \---com
+|               |       \---example
+|               |           \---posiciones
+|               |               |   PosicionesApplication.class
+|               |               |   
+|               |               +---client
+|               |               |       PartidoClient.class
+|               |               |       
+|               |               +---config
+|               |               |       WebClientConfig.class
+|               |               |       
+|               |               +---controller
+|               |               |       PosicionController.class
+|               |               |       
+|               |               +---dto
+|               |               |       PartidoResponseDto.class
+|               |               |       PosicionRequestDto.class
+|               |               |       PosicionResponseDto$PosicionResponseDtoBuilder.class
+|               |               |       PosicionResponseDto.class
+|               |               |       
+|               |               +---model
+|               |               |       Posicion$PosicionBuilder.class
+|               |               |       Posicion.class
+|               |               |       
+|               |               +---repository
+|               |               |       PosicionRepository.class
+|               |               |       
+|               |               +---security
+|               |               |       JwtValidationFilter.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               \---service
+|               |                       PosicionService.class
+|               |                       
+|               +---generated-sources
+|               |   \---annotations
+|               +---generated-test-sources
+|               |   \---test-annotations
+|               \---test-classes
+|                   \---com
+|                       \---example
+|                           \---posiciones
+|                                   PosicionesApplicationTests.class
+|                                   
++---ligas-del-mundo-basti-usuarios
+|   |   README.md
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   \---usuarios
+|       |   solicitudesTratamiento.rest
+|       |   
+|       \---usuarios
+|           |   .gitattributes
+|           |   .gitignore
+|           |   mvnw
+|           |   mvnw.cmd
+|           |   pom.xml
+|           |   
+|           +---.mvn
+|           |   \---wrapper
+|           |           maven-wrapper.properties
+|           |           
+|           +---src
+|           |   +---main
+|           |   |   +---java
+|           |   |   |   \---com
+|           |   |   |       \---example
+|           |   |   |           \---usuarios
+|           |   |   |               |   UsuariosApplication.java
+|           |   |   |               |   
+|           |   |   |               +---config
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               +---controller
+|           |   |   |               |       UsuarioController.java
+|           |   |   |               |       
+|           |   |   |               +---dto
+|           |   |   |               |       UsuarioRequestDto.java
+|           |   |   |               |       UsuarioResponseDto.java
+|           |   |   |               |       
+|           |   |   |               +---model
+|           |   |   |               |       Usuario.java
+|           |   |   |               |       
+|           |   |   |               +---repository
+|           |   |   |               |       UsuarioRepository.java
+|           |   |   |               |       
+|           |   |   |               +---security
+|           |   |   |               |       JwtValidationFilter.java
+|           |   |   |               |       SecurityConfig.java
+|           |   |   |               |       
+|           |   |   |               \---service
+|           |   |   |                       UsuarioService.java
+|           |   |   |                       
+|           |   |   \---resources
+|           |   |           application.properties
+|           |   |           
+|           |   \---test
+|           |       \---java
+|           |           \---com
+|           |               \---example
+|           |                   \---usuarios
+|           |                           UsuariosApplicationTests.java
+|           |                           
+|           \---target
+|               +---classes
+|               |   |   application.properties
+|               |   |   
+|               |   \---com
+|               |       \---example
+|               |           \---usuarios
+|               |               |   UsuariosApplication.class
+|               |               |   
+|               |               +---config
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               +---controller
+|               |               |       UsuarioController.class
+|               |               |       
+|               |               +---dto
+|               |               |       UsuarioRequestDto.class
+|               |               |       UsuarioResponseDto$UsuarioResponseDtoBuilder.class
+|               |               |       UsuarioResponseDto.class
+|               |               |       
+|               |               +---model
+|               |               |       Usuario$UsuarioBuilder.class
+|               |               |       Usuario.class
+|               |               |       
+|               |               +---repository
+|               |               |       UsuarioRepository.class
+|               |               |       
+|               |               +---security
+|               |               |       JwtValidationFilter.class
+|               |               |       SecurityConfig.class
+|               |               |       
+|               |               \---service
+|               |                       UsuarioService.class
+|               |                       
+|               +---generated-sources
+|               |   \---annotations
+|               +---generated-test-sources
+|               |   \---test-annotations
+|               \---test-classes
+|                   \---com
+|                       \---example
+|                           \---usuarios
+|                                   UsuariosApplicationTests.class
+|                                   
++---ligas-del-mundo-joako-servicio-football-api
+|   |   .gitattributes
+|   |   .gitignore
+|   |   mvnw
+|   |   mvnw.cmd
+|   |   pom.xml
+|   |   
+|   +---.github
+|   |   \---java-upgrade
+|   |       |   .gitignore
+|   |       |   
+|   |       \---hooks
+|   |           \---scripts
+|   |                   recordToolUse.ps1
+|   |                   recordToolUse.sh
+|   |                   
+|   +---.mvn
+|   |   \---wrapper
+|   |           maven-wrapper.properties
+|   |           
+|   +---src
+|   |   +---main
+|   |   |   +---java
+|   |   |   |   \---cl
+|   |   |   |       \---duoc
+|   |   |   |           \---football_api
+|   |   |   |               |   FootballApiApplication.java
+|   |   |   |               |   
+|   |   |   |               +---client
+|   |   |   |               |       ApiFootballClient.java
+|   |   |   |               |       LocalClient.java
+|   |   |   |               |       
+|   |   |   |               +---config
+|   |   |   |               |       WebClientConfig.java
+|   |   |   |               |       
+|   |   |   |               +---controller
+|   |   |   |               |       SyncController.java
+|   |   |   |               |       
+|   |   |   |               +---dto
+|   |   |   |               |   |   DtoApiError.java
+|   |   |   |               |   |   
+|   |   |   |               |   +---external
+|   |   |   |               |   |       ApiClubResponse.java
+|   |   |   |               |   |       ApiEntrenadorResponse.java
+|   |   |   |               |   |       ApiJugadorResponse.java
+|   |   |   |               |   |       ApiLeagueResponse.java
+|   |   |   |               |   |       ApiPartidoResponse.java
+|   |   |   |               |   |       ApiPosicionResponse.java
+|   |   |   |               |   |       
+|   |   |   |               |   +---request
+|   |   |   |               |   |       ClubRequest.java
+|   |   |   |               |   |       EntrenadorRequest.java
+|   |   |   |               |   |       EstadioRequest.java
+|   |   |   |               |   |       JugadorRequest.java
+|   |   |   |               |   |       LigaRequest.java
+|   |   |   |               |   |       PaisRequest.java
+|   |   |   |               |   |       PartidoRequest.java
+|   |   |   |               |   |       PosicionRequest.java
+|   |   |   |               |   |       
+|   |   |   |               |   \---response
+|   |   |   |               |           ApiEjecucionResponse.java
+|   |   |   |               |           ClubResponse.java
+|   |   |   |               |           
+|   |   |   |               +---model
+|   |   |   |               |       ApiModel.java
+|   |   |   |               |       
+|   |   |   |               +---repository
+|   |   |   |               |       ApiRepository.java
+|   |   |   |               |       
+|   |   |   |               +---security
+|   |   |   |               |       JwtValidationFilter.java
+|   |   |   |               |       SecurityConfig.java
+|   |   |   |               |       
+|   |   |   |               \---service
+|   |   |   |                       ApiService.java
+|   |   |   |                       
+|   |   |   \---resources
+|   |   |           application-dev.properties
+|   |   |           application-prod.properties
+|   |   |           application-test.properties
+|   |   |           application.properties
+|   |   |           
+|   |   \---test
+|   |       \---java
+|   |           \---cl
+|   |               \---duoc
+|   |                   \---football_api
+|   |                           FootballApiApplicationTests.java
+|   |                           
+|   \---target
+|       +---classes
+|       |   |   application-dev.properties
+|       |   |   application-prod.properties
+|       |   |   application-test.properties
+|       |   |   application.properties
+|       |   |   
+|       |   \---cl
+|       |       \---duoc
+|       |           \---football_api
+|       |               |   FootballApiApplication.class
+|       |               |   
+|       |               +---client
+|       |               |       ApiFootballClient.class
+|       |               |       LocalClient.class
+|       |               |       
+|       |               +---config
+|       |               |       WebClientConfig.class
+|       |               |       
+|       |               +---controller
+|       |               |       SyncController.class
+|       |               |       
+|       |               +---dto
+|       |               |   |   DtoApiError$DtoApiErrorBuilder.class
+|       |               |   |   DtoApiError.class
+|       |               |   |   
+|       |               |   +---external
+|       |               |   |       ApiClubResponse$DatosEquipo.class
+|       |               |   |       ApiClubResponse$DatosEstadio.class
+|       |               |   |       ApiClubResponse$DatosResponse.class
+|       |               |   |       ApiClubResponse.class
+|       |               |   |       ApiEntrenadorResponse$DatosEntrenador.class
+|       |               |   |       ApiEntrenadorResponse$EquipoEntrenador.class
+|       |               |   |       ApiEntrenadorResponse.class
+|       |               |   |       ApiJugadorResponse$DatosEstadisticas.class
+|       |               |   |       ApiJugadorResponse$DatosJuegos.class
+|       |               |   |       ApiJugadorResponse$DatosJugador.class
+|       |               |   |       ApiJugadorResponse$EntradaJugador.class
+|       |               |   |       ApiJugadorResponse$Paging.class
+|       |               |   |       ApiJugadorResponse.class
+|       |               |   |       ApiLeagueResponse$DatosLiga.class
+|       |               |   |       ApiLeagueResponse$DatosPais.class
+|       |               |   |       ApiLeagueResponse$DatosResponse.class
+|       |               |   |       ApiLeagueResponse.class
+|       |               |   |       ApiPartidoResponse$DatosPartido.class
+|       |               |   |       ApiPartidoResponse$EquipoDetalle.class
+|       |               |   |       ApiPartidoResponse$EquiposPartido.class
+|       |               |   |       ApiPartidoResponse$EstadioPartido.class
+|       |               |   |       ApiPartidoResponse$EstadoPartido.class
+|       |               |   |       ApiPartidoResponse$FixtureData.class
+|       |               |   |       ApiPartidoResponse$GolesPartido.class
+|       |               |   |       ApiPartidoResponse$LigaPartido.class
+|       |               |   |       ApiPartidoResponse.class
+|       |               |   |       ApiPosicionResponse$DatosLigaPosicion.class
+|       |               |   |       ApiPosicionResponse$DetallePosicion.class
+|       |               |   |       ApiPosicionResponse$EquipoPosicion.class
+|       |               |   |       ApiPosicionResponse$EstadisticasPosicion.class
+|       |               |   |       ApiPosicionResponse$GolesPosicion.class
+|       |               |   |       ApiPosicionResponse$LigaPosiciones.class
+|       |               |   |       ApiPosicionResponse.class
+|       |               |   |       
+|       |               |   +---request
+|       |               |   |       ClubRequest$ClubRequestBuilder.class
+|       |               |   |       ClubRequest.class
+|       |               |   |       EntrenadorRequest$EntrenadorRequestBuilder.class
+|       |               |   |       EntrenadorRequest.class
+|       |               |   |       EstadioRequest$EstadioRequestBuilder.class
+|       |               |   |       EstadioRequest.class
+|       |               |   |       JugadorRequest$JugadorRequestBuilder.class
+|       |               |   |       JugadorRequest.class
+|       |               |   |       LigaRequest$LigaRequestBuilder.class
+|       |               |   |       LigaRequest.class
+|       |               |   |       PaisRequest$PaisRequestBuilder.class
+|       |               |   |       PaisRequest.class
+|       |               |   |       PartidoRequest$PartidoRequestBuilder.class
+|       |               |   |       PartidoRequest.class
+|       |               |   |       PosicionRequest$PosicionRequestBuilder.class
+|       |               |   |       PosicionRequest.class
+|       |               |   |       
+|       |               |   \---response
+|       |               |           ApiEjecucionResponse$ApiEjecucionResponseBuilder.class
+|       |               |           ApiEjecucionResponse.class
+|       |               |           ClubResponse.class
+|       |               |           
+|       |               +---model
+|       |               |       ApiModel.class
+|       |               |       
+|       |               +---repository
+|       |               |       ApiRepository.class
+|       |               |       
+|       |               +---security
+|       |               |       JwtValidationFilter.class
+|       |               |       SecurityConfig.class
+|       |               |       
+|       |               \---service
+|       |                       ApiService.class
+|       |                       
+|       +---generated-sources
+|       |   \---annotations
+|       +---generated-test-sources
+|       |   \---test-annotations
+|       \---test-classes
+|           \---cl
+|               \---duoc
+|                   \---football_api
+|                           FootballApiApplicationTests.class
+|                           
+\---ligas-del-mundo-joako-servicio-ligas
+    |   .gitattributes
+    |   .gitignore
+    |   mvnw
+    |   mvnw.cmd
+    |   pom.xml
+    |   
+    +---.github
+    |   \---java-upgrade
+    |       |   .gitignore
+    |       |   
+    |       \---hooks
+    |           \---scripts
+    |                   recordToolUse.ps1
+    |                   recordToolUse.sh
+    |                   
+    +---.mvn
+    |   \---wrapper
+    |           maven-wrapper.properties
+    |           
+    +---.vscode
+    |       settings.json
+    |       
+    +---src
+    |   +---main
+    |   |   +---java
+    |   |   |   \---cl
+    |   |   |       \---duoc
+    |   |   |           \---ligas
+    |   |   |               |   LigasApplication.java
+    |   |   |               |   
+    |   |   |               +---controller
+    |   |   |               |       LigasController.java
+    |   |   |               |       
+    |   |   |               +---dto
+    |   |   |               |   |   DtoApiError.java
+    |   |   |               |   |   
+    |   |   |               |   +---request
+    |   |   |               |   |       DtoLigasRequest.java
+    |   |   |               |   |       
+    |   |   |               |   \---response
+    |   |   |               |           DtoLigasResponse.java
+    |   |   |               |           
+    |   |   |               +---exception
+    |   |   |               |       GlobalExceptionHandler.java
+    |   |   |               |       ResourceNotFoundException.java
+    |   |   |               |       
+    |   |   |               +---model
+    |   |   |               |       LigasModel.java
+    |   |   |               |       
+    |   |   |               +---repository
+    |   |   |               |       LigasRepository.java
+    |   |   |               |       
+    |   |   |               +---security
+    |   |   |               |       JwtValidationFilter.java
+    |   |   |               |       SecurityConfig.java
+    |   |   |               |       
+    |   |   |               \---service
+    |   |   |                       LigasService.java
+    |   |   |                       
+    |   |   \---resources
+    |   |           application-dev.properties
+    |   |           application-prod.properties
+    |   |           application-test.properties
+    |   |           application.properties
+    |   |           
+    |   \---test
+    |       \---java
+    |           \---cl
+    |               \---duoc
+    |                   \---ligas
+    |                           LigasApplicationTests.java
+    |                           
+    \---target
+        +---classes
+        |   |   application-dev.properties
+        |   |   application-prod.properties
+        |   |   application-test.properties
+        |   |   application.properties
+        |   |   
+        |   \---cl
+        |       \---duoc
+        |           \---ligas
+        |               |   LigasApplication.class
+        |               |   
+        |               +---controller
+        |               |       LigasController.class
+        |               |       
+        |               +---dto
+        |               |   |   DtoApiError$DtoApiErrorBuilder.class
+        |               |   |   DtoApiError.class
+        |               |   |   
+        |               |   +---request
+        |               |   |       DtoLigasRequest.class
+        |               |   |       
+        |               |   \---response
+        |               |           DtoLigasResponse.class
+        |               |           
+        |               +---exception
+        |               |       GlobalExceptionHandler.class
+        |               |       ResourceNotFoundException.class
+        |               |       
+        |               +---model
+        |               |       LigasModel.class
+        |               |       
+        |               +---repository
+        |               |       LigasRepository.class
+        |               |       
+        |               +---security
+        |               |       JwtValidationFilter.class
+        |               |       SecurityConfig.class
+        |               |       
+        |               \---service
+        |                       LigasService.class
+        |                       
+        +---generated-sources
+        |   \---annotations
+        +---generated-test-sources
+        |   \---test-annotations
+        \---test-classes
+            \---cl
+                \---duoc
+                    \---ligas
+                            LigasApplicationTests.class
+                            
