@@ -105,7 +105,7 @@ export const Admin = () => {
 
   return (
     <div className="container my-5 text-light flex-grow-1">
-      <h2 className="text-warning fw-bold mb-4">⚙️ Panel de Administración (CRUD)</h2>
+      <h2 className="text-warning fw-bold mb-4">⚙️ Panel de Administración</h2>
 
       {alerta.mensaje && (
         <div className={`alert alert-${alerta.tipo} alert-dismissible fade show`} role="alert">

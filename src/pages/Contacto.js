@@ -1,106 +1,94 @@
 import React, { useState } from 'react';
+import { Container, Card, Form, Button } from 'react-bootstrap';
 
-export const Contacto = () => {
-  const [form, setForm] = useState({
-    nombre: '',
-    email: '',
-    asunto: '',
-    mensaje: ''
-  });
+const Contacto = () => {
+    const [formData, setFormData] = useState({
+        nombre: '',
+        correo: '',
+        motivo: 'soporte',
+        mensaje: ''
+    });
 
-  const [enviado, setEnviado] = useState(false);
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert("¡Mensaje enviado!");
+        console.log("Formulario de contacto:", formData);
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (form.nombre && form.email && form.mensaje) {
-      setEnviado(true);
-      setForm({ nombre: '', email: '', asunto: '', mensaje: '' });
-    }
-  };
+    return (
+        <Container className="my-5" style={{ maxWidth: '600px' }}>
+            <div className="text-center mb-4">
+                <h2 className="text-info fw-bold">SOPORTE Y CONTACTO</h2>
+                <p className="text-secondary">¿Tienes dudas o algún problema técnico? Escríbenos.</p>
+            </div>
 
-  return (
-    <div className="container my-5 text-light flex-grow-1">
-      <div className="row justify-content-center">
-        <div className="col-md-8 col-lg-6">
-          <div className="card bg-dark border-secondary p-4 shadow-sm">
-            <h2 className="text-info fw-bold mb-3 text-center">📩 Contáctanos</h2>
-            <p className="text-secondary text-center mb-4">
-              ¿Tienes dudas, sugerencias o necesitas soporte? Escríbenos y te responderemos a la brevedad.
-            </p>
+            <Card className="bg-dark text-light border-secondary p-4">
+                <Form onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3">
+                        <Form.Label className="fw-bold">Nombre Completo</Form.Label>
+                        <Form.Control 
+                            type="text" 
+                            name="nombre"
+                            className="bg-black text-light border-secondary" 
+                            value={formData.nombre}
+                            onChange={handleChange}
+                            required 
+                        />
+                    </Form.Group>
 
-            {enviado && (
-              <div className="alert alert-success alert-dismissible fade show text-center" role="alert">
-                ¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.
-                <button type="button" className="btn-close" onClick={() => setEnviado(false)}></button>
-              </div>
-            )}
+                    <Form.Group className="mb-3">
+                        <Form.Label className="fw-bold">Correo Electrónico</Form.Label>
+                        <Form.Control 
+                            type="email" 
+                            name="correo"
+                            className="bg-black text-light border-secondary" 
+                            value={formData.correo}
+                            onChange={handleChange}
+                            required 
+                        />
+                    </Form.Group>
 
-            <form onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label className="form-label fw-bold">Nombre Completo</label>
-                <input
-                  type="text"
-                  name="nombre"
-                  className="form-control bg-dark text-light border-secondary"
-                  value={form.nombre}
-                  onChange={handleChange}
-                  placeholder="Tu nombre"
-                  required
-                />
-              </div>
+                    <Form.Group className="mb-3">
+                        <Form.Label className="fw-bold">Motivo de la consulta</Form.Label>
+                        <Form.Select 
+                            name="motivo"
+                            className="bg-black text-light border-secondary"
+                            value={formData.motivo}
+                            onChange={handleChange}
+                        >
+                            <option value="soporte">Soporte Técnico</option>
+                            <option value="ventas">Dudas sobre Ventas</option>
+                            <option value="reclamo">Reclamos</option>
+                        </Form.Select>
+                    </Form.Group>
 
-              <div className="mb-3">
-                <label className="form-label fw-bold">Correo Electrónico</label>
-                <input
-                  type="email"
-                  name="email"
-                  className="form-control bg-dark text-light border-secondary"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
+                    <Form.Group className="mb-3">
+                        <Form.Label className="fw-bold">Mensaje</Form.Label>
+                        <Form.Control 
+                            as="textarea" 
+                            rows={4} 
+                            name="mensaje"
+                            className="bg-black text-light border-secondary" 
+                            value={formData.mensaje}
+                            onChange={handleChange}
+                            required 
+                        />
+                    </Form.Group>
 
-              <div className="mb-3">
-                <label className="form-label fw-bold">Asunto</label>
-                <input
-                  type="text"
-                  name="asunto"
-                  className="form-control bg-dark text-light border-secondary"
-                  value={form.asunto}
-                  onChange={handleChange}
-                  placeholder="Motivo de tu mensaje"
-                />
-              </div>
-
-              <div className="mb-4">
-                <label className="form-label fw-bold">Mensaje</label>
-                <textarea
-                  name="mensaje"
-                  rows="4"
-                  className="form-control bg-dark text-light border-secondary"
-                  value={form.mensaje}
-                  onChange={handleChange}
-                  placeholder="Escribe tu mensaje aquí..."
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" className="btn btn-info w-100 fw-bold">
-                Enviar Mensaje
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+                    <Button variant="info" type="submit" className="w-100 text-white fw-bold">
+                        Enviar Mensaje
+                    </Button>
+                </Form>
+            </Card>
+        </Container>
+    );
 };
 
 export default Contacto;

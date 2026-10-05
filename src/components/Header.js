@@ -66,10 +66,14 @@ export const Header = () => {
               </span>
             )}
           </Link>
+          <Link to="/login" className="btn btn-outline-info ms-2">
+            🔑 Login
+          </Link>
         </nav>
       </div>
     </header>
   );
-};
+}
+
 
 export default Header;

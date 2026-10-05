@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+/* Forzar que el ícono del calendario (date picker) se vea en fondos oscuros */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

@@ -10,6 +10,8 @@ import Carrito from './pages/Carrito';
 import Admin from './pages/Admin';
 import Contacto from './pages/Contacto';
 import Nosotros from './pages/Nosotros';
+import Login from './pages/Login';
+import Registro from './pages/Registro';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/registro" element={<Registro />} />
           </Routes>
           <Footer />
         </div>

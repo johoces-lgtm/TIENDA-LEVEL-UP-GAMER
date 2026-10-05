@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Forzar que el ícono del calendario (date picker) se vea en fondos oscuros */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
