@@ -1,15 +1,27 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 
 export const Carrito = () => {
   const { carrito, eliminarDelCarrito, actualizarCantidad, limpiarCarrito, totalPagar } = useContext(CartContext);
   const [compraExitosa, setCompraExitosa] = useState(false);
+  const [tieneDescuento, setTieneDescuento] = useState(false);
+
+  useEffect(() => {
+    // Revisamos si el usuario guardado tiene correo Duoc
+    const correoGuardado = localStorage.getItem("correoRegistrado") || "";
+    if (correoGuardado.includes("@duoc.cl") || correoGuardado.includes("@profesor.duoc.cl")) {
+        setTieneDescuento(true);
+    }
+  }, []);
 
   const handleFinalizarCompra = () => {
     setCompraExitosa(true);
     limpiarCarrito();
   };
+
+  // Calcular el total final
+  const totalConDescuento = tieneDescuento ? totalPagar * 0.8 : totalPagar;
 
   if (compraExitosa) {
     return (
@@ -90,10 +102,24 @@ export const Carrito = () => {
           <div className="col-lg-4">
             <div className="card bg-dark border-secondary text-light p-3">
               <h4 className="text-info fw-bold border-bottom border-secondary pb-2">Resumen de Compra</h4>
-              <div className="d-flex justify-content-between my-3">
-                <span className="fs-5">Total:</span>
-                <span className="fs-5 fw-bold text-info">${totalPagar.toLocaleString('es-CL')} CLP</span>
+              
+              <div className="d-flex justify-content-between my-2">
+                <span className="fs-6">Subtotal:</span>
+                <span className="fs-6 text-secondary">${totalPagar.toLocaleString('es-CL')} CLP</span>
               </div>
+
+              {tieneDescuento && (
+                  <div className="d-flex justify-content-between my-2 text-success">
+                    <span className="fs-6">Descuento Duoc (20%):</span>
+                    <span className="fs-6 fw-bold">-${(totalPagar * 0.2).toLocaleString('es-CL')} CLP</span>
+                  </div>
+              )}
+
+              <div className="d-flex justify-content-between my-3 border-top border-secondary pt-2">
+                <span className="fs-5">Total a Pagar:</span>
+                <span className="fs-5 fw-bold text-info">${totalConDescuento.toLocaleString('es-CL')} CLP</span>
+              </div>
+              
               <button className="btn btn-success w-100 fw-bold mb-2" onClick={handleFinalizarCompra}>
                 Finalizar Compra
               </button>
