@@ -23,10 +23,10 @@ describe('Pruebas Unitarias Frontend - Componente Registro', () => {
       </BrowserRouter>
     );
     
-    const inputRun = screen.getByLabelText(/RUN/i);
-    fireEvent.change(inputRun, { target: { value: '123456789' } });
+    const runInput = screen.getByLabelText(/^RUN/i);
+    fireEvent.change(runInput, { target: { value: '123456789' } });
     
-    expect(inputRun.value).toBe('123456789');
+    expect(runInput.value).toBe('123456789');
   });
 
 });
